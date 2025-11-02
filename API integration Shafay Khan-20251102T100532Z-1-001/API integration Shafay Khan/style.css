@@ -1,0 +1,177 @@
+/* Base */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  background-color: white;
+  overflow-x: hidden;
+  letter-spacing: 0.3px;
+}
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.luxury-nav {
+  border-bottom: 1px solid #eee;
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #444;
+}
+
+/* Hero */
+.hero-luxury {
+  background: url('https://images.unsplash.com/photo-1520975911856-8ef8b2d9f0d7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.hero-luxury h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: 2px;
+}
+.hero-luxury p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.hero-luxury .btn-outline-dark {
+  border: 1px solid #fff;         /* white border to match hero text */
+  color: #fff;                    /* white text */
+  background-color: transparent;
+  border-radius: 50px;            /* makes the button rounded */
+  padding: 12px 40px;             /* gives it a pill shape */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 150;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-luxury .btn-outline-dark:hover {
+  background-color: #fff;
+  color: #000;                    /* invert on hover */
+}
+
+
+
+/* Category Bar */
+.category-bar {
+  background-color: #ffffff;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Product Cards */
+.card {
+  border: none;
+  background-color: #ffffff;
+  transition: transform 0.4s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  background-color: #938f8f;
+  width: 90%;                 /* slightly smaller */
+  margin: 0 auto;             /* centers the card */
+}
+
+.card img {
+  height: 220px;              /* smaller image height */
+  object-fit: contain;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;            /* slightly smaller title */
+}
+
+.card-text {
+  font-size: 0.85rem;         /* smaller text */
+  color: #ffffff;
+}
+
+.price {
+  font-size: 1rem;
+}
+
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.price {
+  color: #b30000;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.btn-buy {
+  border: 2px solid #000;
+  border-radius: 50px;      /* same pill shape */
+  padding: 10px 20px;
+  color: #000;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+.btn-buy:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Footer */
+.footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  background-color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.hero-luxury {
+  background: url(./assests/maingrey.jpg) center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+
+.hero-luxury::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.hero-luxury .container {
+  position: relative;
+  z-index: 2;
+  color: rgb(139, 25, 25);
+}
+
